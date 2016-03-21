@@ -1,0 +1,159 @@
+header {
+  background: #000;
+  width: 100%;
+  min-height: 1vh;
+  position: relative; }
+  @media only screen and (max-width: 600px) {
+    header {
+      background: #fff; } }
+  header h1 {
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+    color: #fff;
+    text-shadow: 0px 2px 5px #000; }
+  header .bar {
+    position: absolute;
+    z-index: 99;
+    bottom: -50px;
+    right: 0;
+    width: 45vw;
+    padding: 20px;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 900; }
+    @media only screen and (max-width: 992px) {
+      header .bar {
+        width: 80vw; } }
+    @media only screen and (max-width: 600px) {
+      header .bar {
+        font-size: 2em;
+        width: 100%;
+        bottom: -90px;
+        padding: 20px 20px 20px 80px; } }
+  header #instafeed {
+    position: relative;
+    padding-left: 240px;
+    line-height: 0 !important; }
+    header #instafeed .row, header #instafeed .col {
+      padding: 0 !important; }
+    header #instafeed a {
+      position: relative; }
+    @media only screen and (max-width: 992px) {
+      header #instafeed {
+        padding-left: 0; } }
+    header #instafeed img {
+      width: 100%;
+      height: auto;
+      opacity: 0.7;
+      transition: all 0.2s;
+      -webkit-filter: sepia(0.4);
+      filter: sepia(0.4); }
+    header #instafeed a:hover img {
+      opacity: 1;
+      -webkit-filter: sepia(0);
+      filter: sepia(0); }
+    header #instafeed a:hover .feedMeta {
+      visibility: hidden;
+      opacity: 0; }
+
+.columns {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 76px;
+  bottom: 0;
+  z-index: 1; }
+
+.columns .item {
+  position: relative;
+  display: none;
+  border-radius: 3px;
+  overflow: hidden;
+  line-height: 0; }
+
+.columns .item h4 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  text-shadow: 0px 2px 5px #000;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 10px 0 10px; }
+
+.columns .item img {
+  width: 100%;
+  -webkit-filter: grayscale(0.8);
+  filter: grayscale(0.2);
+  transition: all 0.2s; }
+  .columns .item img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.side-nav li:first-child {
+  margin: 0 0 120px 0; }
+  .side-nav li:first-child:hover {
+    background-color: #fff; }
+.side-nav li:hover {
+  background-color: #eceff1; }
+.side-nav .ticket {
+  color: #fff !important;
+  text-shadow: 0px 2px 5px #000; }
+
+.burger {
+  position: absolute;
+  z-index: 999;
+  font-size: 4em;
+  top: 1vh;
+  left: 1vw;
+  color: #fff;
+  text-shadow: 0px 2px 5px #000; }
+
+.back {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw; }
+
+header {
+  margin-bottom: 10vh; }
+
+main {
+  position: relative;
+  min-height: 50vh;
+  margin-bottom: 10vh; }
+  main .wrapper {
+    padding-left: 11vw; }
+    @media only screen and (max-width: 992px) {
+      main .wrapper {
+        padding-left: 0; } }
+  main .section {
+    min-height: 80vh; }
+  main .table-of-contents {
+    position: fixed;
+    bottom: 10vh;
+    right: 0vw;
+    width: 10vw; }
+
+footer {
+  min-height: 30vh; }
+  footer .row {
+    margin-bottom: 0; }
+
+.element {
+  animation: shake 1.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite alternate; }
+
+@keyframes shake {
+  20%, 80% {
+    transform: translate3d(-1px, 0, 0); }
+  30%, 70% {
+    transform: translate3d(2px, 0, 0); }
+  30%, 50%, 60% {
+    transform: translate3d(-2px, 0, 0); }
+  40%, 55% {
+    transform: translate3d(2px, 0, 0); } }
